@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>teXelector</title>
+		<link rel="stylesheet" href="index.css" />
+	</head>
+	<body>
+		<div class="main">
+			Hello there, Prashanth Here
+		</div>
+	</body>
+	<script type="text/javascript" src="texelector.js"></script>
+	<script type="text/javascript">
+		var selection = new teXelector();
+		console.log('Selection js object ', selection);
+		selection.config({
+			facebook: true,
+			twitter: true,
+			search: true,
+			copy: true,
+			mode: 'dark',
+		});
+	</script>
+</html>
