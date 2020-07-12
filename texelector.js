@@ -1,3 +1,7 @@
+//TODO: Work on adding more buttons (LinkedIn, Reddit)
+//TODO: Work on the functionalities of the buttons
+//TODO: Select appropriate icons for the button
+//TODO: Remove unwanted variables
 const teXelector = (function () {
 	//Create a dummy element, focus it and do doc.execCommand
 	function copyTextToClipboard(text) {
@@ -22,7 +26,7 @@ const teXelector = (function () {
 			let msg = successful ? 'successful' : 'unsuccessful';
 			//console.log('Copying text command was ', text);
 		} catch (err) {
-			console.log('Oops, unable to copy');
+			console.log('Unable to Copy');
 		}
 
 		document.body.removeChild(textArea);
