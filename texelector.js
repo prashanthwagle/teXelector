@@ -4,8 +4,10 @@
 //TODO: Remove unwanted variables
 
 /**
+ *
  * Methodology: An IIFE which will return a function which will act as a constructor with a preserved namespace.main
  * Eg teXelector IIFE will return a teXelectorUtil function which behaves like a constructor
+ *
  */
 
 const teXelector = (function (config) {
