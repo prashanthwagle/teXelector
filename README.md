@@ -32,14 +32,13 @@ Select some text and be granted with a tooltip which would be a swiss-army knife
 </p>
 
 # TBD
-
 <ul>
   <li> Add support for automatic *.gzip, *.min.js and *.min.js.gzip generation with Gulp/Grunt Task runner
   <li> Add the sharing functionality 
   <li> Add more social media links
   <li> Add support for linters
   <li> Add to the npm repo and/or add chrome-extension support
-<ul>
+</ul>
 
 # Licensing
 
