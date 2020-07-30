@@ -2,7 +2,14 @@
 //TODO: Work on the functionalities of the buttons
 //TODO: Select appropriate icons for the button
 //TODO: Remove unwanted variables
-const teXelector = (function () {
+
+/**
+ * Methodology: An IIFE which will return a function which will act as a constructor with a preserved namespace.main
+ * Eg teXelector IIFE will return a teXelectorUtil function which behaves like a constructor
+ */
+
+const teXelector = (function (config) {
+	console.log(config);
 	//Create a dummy element, focus it and do doc.execCommand
 	function copyTextToClipboard(text) {
 		let textArea = document.createElement('textarea');
@@ -32,15 +39,15 @@ const teXelector = (function () {
 		document.body.removeChild(textArea);
 	}
 
-	function teXelectorUtil() {
+	function teXelectorUtil(options) {
 		const menu = {
-			twitter: true,
-			facebook: true,
-			reddit: true,
-			linkedIn: true,
-			search: true,
-			copy: true,
-			disable: false,
+			twitter: options.twitter ? true : false,
+			facebook: options.facebook ? true : false,
+			reddit: options.reddit ? true : false,
+			linkedIn: options.linkedIn ? true : false,
+			search: options.search ? true : false,
+			copy: options.copy ? true : false,
+			disable: options.disable ? true : false,
 		};
 		const twitterConfig = {
 			url: 'https://twitter.com/intent/tweet?text=',
@@ -217,15 +224,6 @@ const teXelector = (function () {
 			);
 		}
 
-		function confirgureItems(options) {
-			menu.twitter = options.twitter ? menu.twitter : false;
-			menu.facebook = options.facebook ? menu.facebook : false;
-			menu.linkedIn = options.linkedIn ? menu.linkedIn : false;
-			menu.reddit = options.reddit ? menu.reddit : false;
-			menu.search = options.search ? menu.search : false;
-			menu.copy = options.copy ? menu.copy : false;
-		}
-
 		function styleToolTip(mode = 'light') {
 			bgColor = mode === 'dark' ? '#000000' : '#ffffff';
 			console.log('bgColor ', bgColor, mode);
@@ -236,15 +234,8 @@ const teXelector = (function () {
 			document.body.appendChild(style);
 		}
 
-		function config(options) {
-			confirgureItems(options);
-			styleToolTip(options.mode);
-			attachEvents();
-		}
-
-		return {
-			config: config,
-		};
+		styleToolTip(options.mode);
+		attachEvents();
 	}
 
 	function Button(icon, clickFn) {
@@ -264,5 +255,6 @@ const teXelector = (function () {
 		};
 		return btn;
 	}
+
 	return teXelectorUtil;
 })();
