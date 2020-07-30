@@ -31,7 +31,7 @@ Select some text and be granted with a tooltip which would be a swiss-army knife
   <img src="https://github.com/prashanthwagle/teXelector/blob/master/screenshots/teXelector_dark_l2r.png" />
 </p>
 
-### TBD
+# TBD
 
 <ul>
   <li> Add support for automatic *.gzip, *.min.js and *.min.js.gzip generation with Gulp/Grunt Task runner
