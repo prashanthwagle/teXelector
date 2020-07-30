@@ -3,10 +3,12 @@
 </p>
 
 # teXelector
-A Medium-like text-selection tooltip written in Vanilla JS. 
+
+A Medium-like text-selection tooltip written in Vanilla JS.
 Select some text and be granted with a tooltip which would be a swiss-army knife of internet utilities like Search, Social-Media Share and Copy
 
 # Features
+
 <ul>
   <li>Minimal Size (3kb gzipped)
   <li>All major social media platforms available (Facebook, Twitter, Reddit, LinkedIn etc)
@@ -16,17 +18,29 @@ Select some text and be granted with a tooltip which would be a swiss-army knife
 </ul>
 
 # Screenshots
+
 ### Light Mode, Text Selection from Right to Left
+
 <p align="center">
   <img src="https://github.com/prashanthwagle/teXelector/blob/master/screenshots/teXelector_light_r2l.png" />
 </p>
 
 ### Dark Mode, Text Selection from Left to Right
+
 <p align="center">
   <img src="https://github.com/prashanthwagle/teXelector/blob/master/screenshots/teXelector_dark_l2r.png" />
 </p>
 
+### TBD
+
+<ul>
+  <li> To add support for automatic *.gzip, *.min.js and *.min.js.gzip generation with Gulp/Grunt Task runner
+  <li> To add the sharing functionality 
+  <li> To add more social media links
+  <li> Add support for linters
+<ul>
 
 # Licensing
+
 MIT License
 Copyright (c) 2020 Prashanth P Wagle
