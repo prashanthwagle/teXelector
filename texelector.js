@@ -2,7 +2,7 @@
 //TODO: Work on the functionalities of the buttons
 //TODO: Select appropriate icons for the button
 //TODO: Remove unwanted variables
-
+//TODO: Automatically take care of generating minnified and gzipped versions of the code using Gulp/Grunt Task Runners
 /**
  *
  * Methodology: An IIFE which will return a function which will act as a constructor with a preserved namespace.main
