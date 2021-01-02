@@ -1,0 +1,27 @@
+{
+  "name": "texelector",
+  "version": "1.0.0",
+  "description": "",
+  "main": "teXelector.js",
+  "scripts": {
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/prashanthwagle/teXelector.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/prashanthwagle/teXelector/issues"
+  },
+  "homepage": "https://github.com/prashanthwagle/teXelector#readme",
+  "dependencies": {
+    "webpack": "^5.11.1",
+    "webpack-cli": "^4.3.1"
+  },
+  "devDependencies": {
+    "clean-webpack-plugin": "^3.0.0"
+  }
+}
