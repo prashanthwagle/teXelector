@@ -6,10 +6,57 @@
   </head>
   <body>
     <div class="main">
-      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis, dicta
-      fuga? Voluptatibus voluptatem qui earum culpa veniam iste a tempore dolor
-      maxime? Blanditiis, eveniet laborum minima reprehenderit nemo cupiditate
-      animi.
+      CSS Pseudo Selectors: What are they? Prashanth Wagle Prashanth Wagle Nov
+      15, 2020 · 3 min read Image for post Cover Photo by Tirachard Kumtanom
+      from Pexels Basics Selectors are patterns used to identify select the
+      elements in the DOM for which styles would be applied. In fact, they are
+      the first part of any CSS rule. Example: h1{ background-color: magenta; }
+      h1 is the selector in the above example. Out of various patterns used to
+      select a particular DOM element from the tree, pseudo-elements and
+      pseudo-classes (obviously!) are one of its kind which is drastically
+      different than the common ones. (FYI: Type, class, and ID selectors,
+      Attribute selectors, Attribute selectors are the other types).
+      Pseudo-Classes Pseudo-classes are identified with a single colon according
+      to the CSS3 specification. A pseudo-class is a selector that selects
+      elements that are in a specific state. For instance, the specific state
+      may be an HTML element that is clicked/hovered or an element that is the
+      first child of its parent. The syntax of pseudo-classes is: element:name{
+      //properties } Example: li:first-child{ color: red; } Here the first-child
+      selector selects the li element which is the first child among its
+      siblings. This selector would be helpful in styling without having to
+      add/delete classes via Javascript if more sibling elements are added.
+      Pseudo-classes which are user-action based The styling will be based on
+      the action carried out by the users. Eg: :hover - applies when the user
+      hovers over the element, :focus - applies when the user selects the input
+      element. Pseudo-Classes which are based on the position The styling will
+      be based on the position of the element in the DOM tree relative to its
+      sibling/parents. Eg: :first-child – selects the first element within a
+      parent. :nth-child() – selects elements based on a simple provided
+      algebraic expression. A few instances are :nth-child(2n) wherein all even
+      children are selected and :nth-child(2n+1) wherein all odd children are
+      selected. Other Pseudo-Classes :not() – removes elements from an existing
+      matched set that match the selector inside the parameter of :not(). :empty
+      - selects the pseudo-classes which have no text or child elements.
+      Pseudo-Elements Pseudo-Elements are used to style specific parts of the
+      element or elements. According to the CSS3 specification they are
+      identified with double-colon (::). For example, they may be used to change
+      the properties of the first letter or a line of an element. The syntax of
+      pseudo-elements is: element::name{ //properties } Example: p::first-line {
+      color: #5e5e5e; } Examples of Psuedo-Elements The commonly used
+      pseudo-elements include: ::first-line to style the first line of the
+      element. ::first-letter to style the first letter of the element. ::before
+      to insert some content before the element. ::after to insert some content
+      after the element. ::selection to style the content selected by the user.
+      Other rarely used pseudo-elements: ::file-selector-button, ::backdrop,
+      ::cue, ::cue-region, ::grammar-error, ::part(), ::placeholderetc. Note The
+      single-colon syntax was used for both pseudo-classes and pseudo-elements
+      in CSS2 and CSS1. The double-colon replaced the single-colon notation for
+      pseudo-elements in CSS3. This was an attempt from W3C to distinguish
+      between pseudo-classes and pseudo-elements. For backward compatibility,
+      the single-colon syntax is acceptable for CSS2 and CSS1 pseudo-elements.
+      Frontend Weekly It's really hard to keep up with all the front-end…
+      Following 18 Css3 Web Development Web Design Frontend Style 18 claps
+      Prashanth Wagle WRITTEN BY Prashanth Wagle Software Engineer
     </div>
   </body>
   <script type="text/javascript" src="texelector.js"></script>
