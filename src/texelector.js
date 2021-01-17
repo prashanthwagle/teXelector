@@ -92,7 +92,9 @@ window.teXelector = (function (config) {
     }
 
     function searchButton() {
-      return new Button(searchConfig.icon, function () {});
+      return new Button(searchConfig.icon, function () {
+        window.open(`https://duckduckgo.com/?q=${text.split(" ").join("+")}`);
+      });
     }
 
     function copyButton() {
